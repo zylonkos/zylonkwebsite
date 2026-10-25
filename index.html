@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ZylonkOS — Termos de teste</title>
+  <link href="style.css" rel="stylesheet">
+  <script src="script.js"></script>
+</head>
+<body>
+  <main>
+    <div class="brand">ZylonkOS · Programa de testes</div>
+    <h1>Antes de baixar, leia e confirme.</h1>
+    <p class="lead">
+      O ZylonkOS é um sistema operacional em desenvolvimento. Leia cada declaração
+      e marque todas as caixas obrigatórias para habilitar o botão de download.
+    </p>
+
+    <p> Prévia: </p>
+    <img src="img/test.png">
+
+    <section class="card" aria-labelledby="terms-title">
+      <h2 id="terms-title">Confirmações obrigatórias</h2>
+      <p class="hint">Todas as opções precisam ser marcadas. Leia as instruções oficiais do projeto antes de instalar ou executar a imagem.</p>
+
+      <form id="consent-form">
+        <label class="item">
+          <input type="checkbox" required>
+          <span><strong>Entendo que é experimental</strong>
+            O sistema pode conter erros, apresentar instabilidade ou não funcionar em meu hardware.</span>
+        </label>
+        <label class="item">
+          <input type="checkbox" required>
+          <span><strong>Verifiquei os requisitos</strong>
+            Conferi os requisitos de hardware e firmware publicados pelo projeto antes de prosseguir.</span>
+        </label>
+        <label class="item">
+          <input type="checkbox" required>
+          <span><strong>Protegerei meus dados</strong>
+            Farei backup dos arquivos importantes e não testarei o sistema em um computador ou disco com dados que não posso perder.</span>
+        </label>
+        <label class="item">
+          <input type="checkbox" required>
+          <span><strong>Seguirei as instruções de segurança</strong>
+            Usarei primeiro um ambiente virtual quando possível e não instalarei o sistema em meu computador principal sem compreender os riscos.</span>
+        </label>
+        <label class="item">
+          <input type="checkbox" required>
+          <span><strong>Li os termos do programa de testes</strong>
+            Compreendo o propósito do teste, as limitações conhecidas e como reportar problemas.</span>
+        </label>
+
+        <div class="note">
+          <strong>Atenção:</strong> não prossiga se não compreender os riscos. O formulário não substitui as instruções de instalação nem garante compatibilidade.
+        </div>
+        <button id="download-button" type="submit" disabled>Confirmar e continuar</button>
+        <p class="status" id="status" role="status" aria-live="polite">Marque todas as caixas para continuar.</p>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
