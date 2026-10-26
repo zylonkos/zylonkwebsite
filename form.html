@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ZylonkOS- Formulário de Teste</title>
+</head>
+<body>
+    <div class="ret">
+    <img class="logo" src="img/logo.png" alt="Logo do ZylonkOS">
+    <div class="conteudo">
+        <h2 class="main">Termos e Condições</h2>
+    </div>
+    </div>
+    <p>Leia o documento com os Termos e Condições para testar o ZylonkOS</p>
+    <button>
+        <a href="termos-de-teste-zylonkos.pdf">Abrir documento</a>
+    </button>
+     <p>
+        *O ZylonkOS está temporariamente limitado a somente usar o ambiente UEFI e processadores x86-64.
+    </p>
+    <form onsubmit="return verificarTermos(event)">
+    <label>
+        <input type="checkbox" id="termos" required>
+        Li e aceito os Termos e Condições
+    </label>
+    <button type="submit">Aceitar e continuar</button>
+    </form>
+
+    <script>
+        function verificarTermos(event) {
+            event.preventDefault();
+
+            if (document.getElementById("termos").checked) {
+                window.location.href = "https://drive.google.com/file/d/1mdA5YaO9mIpkqSlPgchOJ6ZToFiaYZ8C/view?usp=drive_link";
+            }
+        }
+    </script>
+    <p>
+        ⚠️ A Zylonk Company não se responsabiliza por perca de dados ou danos permanentes
+    </p>
+    <button><a href="saibamais.html">Saiba Mais</a></button>
+</body>
+</html>
